@@ -323,7 +323,7 @@ var pname=function(id){for(var i=0;i<S.people.length;i++)if(S.people[i].id===id)
 var isAdmin=function(){return S.me&&S.me.role==="Admin";};
 var isDue=function(l){return l.followUp&&l.followUp<=todayKey()&&l.status!=="Completed"&&l.status!=="Rejected";};
 
-var WEB_APP_URL="";   // only needed when this HTML is opened outside Apps Script: paste your web app URL (ends with /exec)
+var WEB_APP_URL="https://script.google.com/macros/s/AKfycbzIllQ6WBvJOLEqDnYsVSNKv81MvQ-rKxFNHaXY1THpwQjpnRP6RMPGyygd5soE68eg/exec";   // only needed when this HTML is opened outside Apps Script: paste your web app URL (ends with /exec)
 var inGAS=!!(window.google&&google.script&&google.script.run);
 function appUrl(){
   var u=WEB_APP_URL||sget("aar_url");
